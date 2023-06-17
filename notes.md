@@ -39,3 +39,29 @@ C 2017 года версии JS называются по году  <span style=
 
 Наиболее популярная - это неофициальная документация на сайте [MDM Web Docs](https://developer.mozilla.org/ru/docs/Web/JavaScript)
 
+###  <span style='color: #ff710a;'> Подключение JavaScript
+
+JavaScript  можно подключить непосредственно в файле html заключив код в тэги 
+
+ <span style='color: #47ff40;'>\<script>
+
+   <span style='color: #47ff40;'> console.log('Мой первый скрипт');
+
+  <span style='color: #47ff40;'>\</script> 
+  
+  
+
+Или же, что чаще бывает скрипт подключают отдельным файлом перед закрывающим тэгом body
+
+<span style='color: #47ff40;'>\<script src="script.js">\</script>
+
+Пример можно посмотреть в папке <span style='color: #79c6ff;'>00-js-basics
+
+
+###  <span style='color: #ff710a;'> JavaScript  вне браузера
+
+node.js 
+
+после установки можно проверить <span style='color: #47ff40;'>node -v 
+
+Для запуска достаточно перейти в дирректорию скрипта и  ввести команду в терминале<span style='color: #47ff40;'> __node название_скрипта.js__ 
