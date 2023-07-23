@@ -1,38 +1,129 @@
 * {
- margin: 0;
- padding: 0;
- box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-main {
-  margin: 20px auto;
-  color: #fff;
-  font-size: 18px;
+body {
+  height: 100%;
+  width: 100%;
+  background-color: antiquewhite;
+}
+
+.container {
+
+
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
 }
 
 header {
-  width: 600px;
-  height: 50px;
   margin: 0 auto;
-  background: #9ab900;
   text-align: center;
+  
+}
+
+.header {
+  width: 100%;
+  min-width: 300px;
+  height: 35px;
+  background: #6806fa;
+  flex: 0 0 auto;
+  
+}
+ nav{
+ min-height: 30px;
+ background: rgba(44 57 109 / 62%);
+}
+ul {
+  display: flex;
+  justify-content: space-around;
+  margin: 5px 10px;
+}
+li {
+ list-style: none;
+}
+
+ul li a{
+ text-decoration: none;
+ color:#1200b4;
+ text-transform: uppercase;
+ font-size: 12px;
+}
+.content {
+
+  min-height: 100%;
+  margin: 0px auto;
+  color: #fff;
+  font-size: 18px;
+  background: url(img/1.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  flex-grow: 1;
+  width: 100%;
+}
+
+.content-header {
+  margin: 20px 0 30px;
+}
+
+.header-line {
+  display: flex;
+  flex-direction: row;
+  width: 800px;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  padding: 5px 0;
+}
+
+.header-line_info {
+  display: flex;
+  align-items: center
+}
+
+.header-line_img {
+  height: 25px;
+  width: 25px;
 }
 
 h1 {
- color: #0852ff;
+  color: #503ef3;
 }
+
 container {
   display: block;
-  padding: 50px 10px;
+  padding: 30px 10px;
   height: 350px;
   width: 600px;
   margin: 0 auto;
-  background: #0852ff;
+  background: #000938a1;
   text-align: center;
+  margin-bottom: 10px;
+}
+.top-text{
+ margin: 5px 0 20px 0;
+}
+button {
+  padding:  12px;
+  width: 50px;
+  margin: 50px 0;
 }
 
-button {
- padding: 12px;
- width: 50px;
- margin: 20px 0;
+.two img {
+  width: 100px;
+  height: 150px;
+
+}
+
+footer {
+  display: block;
+  height: 30px;
+  background: #6806fa;
+  flex: 0 0 auto;
+  color: beige;
 }

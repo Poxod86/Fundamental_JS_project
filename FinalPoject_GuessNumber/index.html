@@ -1,37 +1,62 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <title>Игра Угадай Число</title>
 </head>
+
 <body>
-  <main>
-    <header>
-    <h1>Угадай число</h1>
+  <div class="container">
+    <nav>
+      <ul>
+        <li><a href="#">Выйти в главное меню</a></li>
+        <li><a href="#">Начать заново</a></li>
+        <li><a href="#">Таблица результатов</a></li>
+        <li><a href="#">Помощь и поддержка</a></li>
+      </ul>
+    </nav>
+    <header class="header">
+      <div class="header-line">
+        <span>Фундаментальный JS</span>
+        <span>Угадай число</span>
+        <div class="header-line_info"><img class="header-line_img" src="img/money.svg" alt="money">
+          <p>Монеты:<span class="money"></span></p>
+        </div>
+      </div>
     </header>
-<container>
-  <p>Загадано число от 1 до 10.<br> Дается 3 попытки чтобы угадать</p>
+    
+    <main class="content">
+      <header class="content-header">
+      <h1>Угадай число</h1>
+    </header>
+    <container>
+      <p class="top-text">Загадано число от 1 до 10.<br> Дается 3 попытки чтобы угадать</p>
 
-<button onclick="guessNumber(1)">1</button>
-<button onclick="guessNumber(2)">2</button>
-<button onclick="guessNumber(3)">3</button>
-<button onclick="guessNumber(4)">4</button>
-<button onclick="guessNumber(5)">5</button>
-<button onclick="guessNumber(6)">6</button>
-<button onclick="guessNumber(7)">7</button>
-<button onclick="guessNumber(8)">8</button>
-<button onclick="guessNumber(9)">9</button>
-<button onclick="guessNumber(10)">10</button>
-<p> Результат: 
-<span class="result"></span> </p>
-<p> Побед: 
-  <span class="win"></span> / Поражений: <span class="loss"></span> </p>
-</container>    
+      <button onclick="guessNumber(1)">1</button>
+      <button onclick="guessNumber(2)">2</button>
+      <button onclick="guessNumber(3)">3</button>
+      <button onclick="guessNumber(4)">4</button>
+      <button onclick="guessNumber(5)">5</button>
+      <button onclick="guessNumber(6)">6</button>
+      <button onclick="guessNumber(7)">7</button>
+      <button onclick="guessNumber(8)">8</button>
+      <button onclick="guessNumber(9)">9</button>
+      <button onclick="guessNumber(10)">10</button>
+      <p> Результат:
+        <span class="result"></span>
+      </p>
+      <p> Побед:
+        <span class="win"></span> / Поражений: <span class="loss"></span>
+      </p>
+    </container> 
 
-  </main>
-
-<script src="js/main.js"></script>
+    </main>
+    <footer>Все права защищены.</footer>
+  </div>
+  <script src="js/main.js"></script>
 </body>
+
 </html>

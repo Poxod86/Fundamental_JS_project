@@ -2,7 +2,8 @@ i = 0;
 let number = randomNum()
 let win = 0;
 let loss = 0;
-
+let money = 15;
+document.querySelector(".money").innerText = money;
 function randomNum() {
   return (Math.floor(Math.random() * 10) + 1);
 };
@@ -35,3 +36,7 @@ function guessNumber(guessNum) {
   i++;
   document.querySelector(".result").innerText += ` У вас осталось ${3 - i} попытки`;
 };
+
+function getMoney(money){
+  document.querySelector(".money").innerText = money;
+}
